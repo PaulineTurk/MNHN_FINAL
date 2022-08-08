@@ -15,5 +15,5 @@ The user guide will be added when the project will be fully completed.
 
 
 
-# pip freeze > requirements.txt   (pour obtenir le txt de mon venv)
+pip freeze > requirements.txt   (pour obtenir le txt de mon venv)
 pip install -r requirements.txt # to download my venv
