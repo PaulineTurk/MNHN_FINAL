@@ -73,6 +73,18 @@ and with pid between 40 and 50%
 1. Selection of pseudo-counter 2D + Visualisation ~ 2min
 2. Selection of pseudo-counter 3D with one contextual amino acid (UNI) ~ 42min
 3. Selection of pseudo-counter 3D with multiple contextual amino acids (MULTI) ~ 56min
+<<<<<<< HEAD
+=======
+
+#### Evaluation with Example TEST ~ 2h28min
+> 8 pseudo-counters computed: 0, 0.001, 0.01, 0.1, 1, 10, 100, 1000
+1. Selection of pseudo-counter 2D + Visualisation ~ 1min
+2. Selection of pseudo-counter 3D with one contextual amino acid (UNI) ~ 42min
+
+> 14 pseudo-counters computed: 0, 0.001, 0.01, 0.1, 1, 10, 100, 1000,
+> 0.2, 0.4, 0.8, 1.6, 3.2, 6.4
+3. Selection of pseudo-counter 3D with multiple contextual amino acids (MULTI) ~ 1h45min
+>>>>>>> 532ddb44267c4424255c2d5e6ea1fb06527cfad0
 
 #### Evaluation with Example TEST ~ 2h28min
 > 8 pseudo-counters computed: 0, 0.001, 0.01, 0.1, 1, 10, 100, 1000
@@ -83,11 +95,23 @@ and with pid between 40 and 50%
 > 0.2, 0.4, 0.8, 1.6, 3.2, 6.4
 3. Selection of pseudo-counter 3D with multiple contextual amino acids (MULTI) ~ 1h45min
 
+<<<<<<< HEAD
+=======
+## Testing Phase ~ 25min
+>>>>>>> 532ddb44267c4424255c2d5e6ea1fb06527cfad0
 
 
+<<<<<<< HEAD
 ## Testing Phase ~ 25min
 
 ### Step 6: Brier with naive Bayes
+=======
+> pseudo-counters 2D and 3D fixed according to the results of step 5 and 1M exemple test
+
+1. Brier Score test computing with one contextual amino acid (UNI) ~ 5min
+2. Brier Score computing with multiple contextual amino acids (MULTI) ~ 7min
+3. Brier Score computing with all saved contextual amino acids (FULL) ~ 13min
+>>>>>>> 532ddb44267c4424255c2d5e6ea1fb06527cfad0
 
 > pseudo-counters 2D and 3D fixed according to the results of step 5 and 1M exemple test
 
