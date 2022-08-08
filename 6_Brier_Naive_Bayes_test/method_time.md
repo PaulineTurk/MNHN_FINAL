@@ -94,4 +94,3 @@ and with pid between 40 and 50%
 1. Brier Score test computing with one contextual amino acid (UNI) ~ 5min
 2. Brier Score computing with multiple contextual amino acids (MULTI) ~ 7min
 3. Brier Score computing with all saved contextual amino acids (FULL) ~ 13min
-
