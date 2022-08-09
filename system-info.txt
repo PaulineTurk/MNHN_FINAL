@@ -1,0 +1,593 @@
+Starting the Ubuntu Forums 'system-info' Report: 2022-08-09  09:54:59 CEST (+0200)
+	Part of the Ama-gi Project
+	Version: 01.00-19, Script Date: 2022.06.21
+
+---------------------------------------------------------------
+Main Complaint: 
+Problem Description:  
+---------- General Computer Specifications:
+
+  --- Computer/CPU Information from 'lshw -C cpu' --- 
+*-Cpu:0
+    Description: CPU
+    Product: Intel(R) Xeon(R) Silver 4214R CPU @ 2.40GHz
+    Vendor: Intel Corp.
+    Physical id: 73
+    Bus info: cpu@0
+    Version: Intel(R) Xeon(R) Silver 4214R CPU @ 2.40GHz
+    Slot: CPU0
+    Size: 3315MHz
+    Capacity: 4GHz
+    Width: 64 bits
+    Clock: 100MHz
+    Capabilities: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 
+        apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse 
+        sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc art 
+        arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid 
+        aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 
+        sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt 
+        tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch 
+        cpuid_fault epb cat_l3 cdp_l3 invpcid_single intel_ppin ssbd mba ibrs 
+        ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad 
+        fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a 
+        avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd 
+        avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc 
+        cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window 
+        hwp_epp hwp_pkg_req pku ospke avx512_vnni md_clear flush_l1d 
+        arch_capabilities cpufreq
+    Configuration: cores=12 enabledcores=12 threads=24
+*-Cpu:1
+    Description: CPU
+    Product: Intel(R) Xeon(R) Silver 4214R CPU @ 2.40GHz
+    Vendor: Intel Corp.
+    Physical id: 77
+    Bus info: cpu@1
+    Version: Intel(R) Xeon(R) Silver 4214R CPU @ 2.40GHz
+    Slot: CPU1
+    Size: 1GHz
+    Capacity: 4GHz
+    Width: 64 bits
+    Clock: 100MHz
+    Capabilities: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 
+        apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse 
+        sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc art 
+        arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid 
+        aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 
+        sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt 
+        tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch 
+        cpuid_fault epb cat_l3 cdp_l3 invpcid_single intel_ppin ssbd mba ibrs 
+        ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad 
+        fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a 
+        avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd 
+        avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc 
+        cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window 
+        hwp_epp hwp_pkg_req pku ospke avx512_vnni md_clear flush_l1d 
+        arch_capabilities cpufreq
+    Configuration: cores=12 enabledcores=12 threads=24
+
+computer
+    Description: Desktop Computer
+    Product: Precision 7920 Tower (073A)
+    Vendor: Dell Inc.
+    Serial: [REMOVED]
+    Width: 64 bits
+    Capabilities: smbios-3.2.1 dmi-3.2.1 smp vsyscall32
+    Configuration:
+        boot=normal
+        chassis=desktop
+        family=Precision
+        sku=073A
+        uuid=[REMOVED]
+
+------------------ SMBIOS Information from '/sys/class/dmi/id/' 
+Bios Vendor:         Dell Inc.
+Bios Version:        2.23.1
+Bios Release:        2.23
+Board Vendor:        Dell Inc.
+Board Name:          060K5C
+Board Version:       A06
+Board Serial:        /6BDLDN3/CNFCW0022D0019/
+Board Asset Tag:     
+
+Current boot mode:   UEFI Firmware mode
+   --- SecureBoot Status from 'mokutil':
+SecureBoot enabled
+
+
+---------- Memory Information:
+              total        used        free      shared  buff/cache   available
+Mem:          125Gi        21Gi        55Gi       159Mi        48Gi       103Gi
+Swap:         2.0Gi       978Mi       1.0Gi
+
+---------- IP Address Information:
+  --- IP Address Information from 'ip addr' --- 
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet [REMOVED]
+    inet6 [REMOVED]
+2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+3: enp0s31f6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    inet [REMOVED]
+    inet6 [REMOVED]
+
+  --- Internet Connection Status from 'ping [various addresses]' --- 
+Connected to Internet with DNS
+
+  --- Network Device Status Summary from 'ip addr' ---  
+These Network Devices are up:
+3: enp0s31f6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+
+  --- Hostname from 'hostname --fqdn' ---  
+The 'Hostname' of the computer system is: abiboom
+
+
+---------- Storage Controller Information From 'lspci':
+0000:00:11.5 SATA controller: Intel Corporation C620 Series Chipset Family SSATA Controller [AHCI mode] (rev 09) (prog-if 01 [AHCI 1.0])
+	Subsystem: Dell C620 Series Chipset Family SSATA Controller [AHCI mode]
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 29
+	NUMA node: 0
+	Region 0: Memory at 90326000 (32-bit, non-prefetchable) [size=8K]
+	Region 1: Memory at 9032a000 (32-bit, non-prefetchable) [size=256]
+	Region 2: I/O ports at 30d0 [size=8]
+	Region 3: I/O ports at 30c0 [size=4]
+	Region 4: I/O ports at 3020 [size=32]
+	Region 5: Memory at 90280000 (32-bit, non-prefetchable) [size=512K]
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+		Address: fee00298  Data: 0000
+	Capabilities: [70] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold-)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [a8] SATA HBA v1.0 BAR4 Offset=00000004
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+
+
+0000:00:17.0 RAID bus controller: Intel Corporation C600/X79 series chipset SATA RAID Controller (rev 09)
+	Subsystem: Dell C600/X79 series chipset SATA RAID Controller
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 69
+	NUMA node: 0
+	Region 0: Memory at 90324000 (32-bit, non-prefetchable) [size=8K]
+	Region 1: Memory at 90328000 (32-bit, non-prefetchable) [size=256]
+	Region 2: I/O ports at 3050 [size=8]
+	Region 3: I/O ports at 3040 [size=4]
+	Region 4: I/O ports at 3000 [size=32]
+	Region 5: Memory at 90200000 (32-bit, non-prefetchable) [size=512K]
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+		Address: fee00378  Data: 0000
+	Capabilities: [70] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold-)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [a8] SATA HBA v1.0 BAR4 Offset=00000004
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+
+
+0000:44:05.5 RAID bus controller: Intel Corporation Volume Management Device NVMe RAID Controller (rev 07)
+	Subsystem: Intel Corporation Volume Management Device NVMe RAID Controller
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	NUMA node: 0
+	Region 0: Memory at 3800bc000000 (64-bit, prefetchable) [size=32M]
+	Region 2: Memory at 92000000 (32-bit, non-prefetchable) [size=32M]
+	Region 4: Memory at 3800bff00000 (64-bit, non-prefetchable) [size=1M]
+	Capabilities: [80] MSI-X: Enable+ Count=33 Masked-
+		Vector table: BAR=4 offset=00000000
+		PBA: BAR=4 offset=00001000
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: vmd
+	Kernel modules: vmd
+
+
+0000:d1:05.5 RAID bus controller: Intel Corporation Volume Management Device NVMe RAID Controller (rev 07)
+	Subsystem: Intel Corporation Volume Management Device NVMe RAID Controller
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	NUMA node: 1
+	Region 0: Memory at 3801bc000000 (64-bit, prefetchable) [size=32M]
+	Region 2: Memory at ec000000 (32-bit, non-prefetchable) [size=32M]
+	Region 4: Memory at 3801bff00000 (64-bit, non-prefetchable) [size=1M]
+	Capabilities: [80] MSI-X: Enable+ Count=33 Masked-
+		Vector table: BAR=4 offset=00000000
+		PBA: BAR=4 offset=00001000
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Kernel driver in use: vmd
+	Kernel modules: vmd
+
+
+10000:01:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd Device a80a (prog-if 02 [NVM Express])
+	Subsystem: Samsung Electronics Co Ltd Device a801
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ -2147483648
+	NUMA node: 0
+	Region 0: Memory at 92000000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [40] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [50] MSI: Enable- Count=1/32 Maskable- 64bit+
+		Address: 0000000000000000  Data: 0000
+	Capabilities: [70] Express (v2) Endpoint, MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0, Latency L0s unlimited, L1 unlimited
+			ExtTag+ AttnBtn- AttnInd- PwrInd- RBE+ FLReset+ SlotPowerLimit 0.000W
+		DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
+			RlxdOrd+ ExtTag+ PhantFunc- AuxPwr- NoSnoop+ FLReset-
+			MaxPayload 128 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr+ NonFatalErr- FatalErr- UnsupReq+ AuxPwr- TransPend-
+		LnkCap:	Port #0, Speed 16GT/s, Width x4, ASPM L1, Exit Latency L1 <64us
+			ClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+
+		LnkCtl:	ASPM L1 Enabled; RCB 64 bytes Disabled- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 8GT/s (downgraded), Width x4 (ok)
+			TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+, NROPrPrP-, LTR+
+			 10BitTagComp+, 10BitTagReq-, OBFF Not Supported, ExtFmt-, EETLPPrefix-
+			 EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-
+			 FRS-, TPHComp-, ExtTPHComp-
+			 AtomicOpsCap: 32bit- 64bit- 128bitCAS-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled
+			 AtomicOpsCtl: ReqEn-
+		LnkCtl2: Target Link Speed: 16GT/s, EnterCompliance- SpeedDis-
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete+, EqualizationPhase1+
+			 EqualizationPhase2+, EqualizationPhase3+, LinkEqualizationRequest-
+	Capabilities: [b0] MSI-X: Enable+ Count=130 Masked-
+		Vector table: BAR=0 offset=00003000
+		PBA: BAR=0 offset=00002000
+	Capabilities: [100 v2] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UESvrt:	DLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
+		CEMsk:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
+		AERCap:	First Error Pointer: 00, ECRCGenCap+ ECRCGenEn- ECRCChkCap+ ECRCChkEn-
+			MultHdrRecCap+ MultHdrRecEn- TLPPfxPres- HdrLogCap-
+		HeaderLog: 00000000 00000000 00000000 00000000
+	Capabilities: [168 v1] Alternative Routing-ID Interpretation (ARI)
+		ARICap:	MFVC- ACS-, Next Function: 0
+		ARICtl:	MFVC- ACS-, Function Group: 0
+	Capabilities: [178 v1] Secondary PCI Express
+		LnkCtl3: LnkEquIntrruptEn-, PerformEqu-
+		LaneErrStat: 0
+	Capabilities: [198 v1] Physical Layer 16.0 GT/s <?>
+	Capabilities: [1bc v1] Lane Margining at the Receiver <?>
+	Capabilities: [214 v1] Latency Tolerance Reporting
+		Max snoop latency: 3145728ns
+		Max no snoop latency: 3145728ns
+	Capabilities: [21c v1] L1 PM Substates
+		L1SubCap: PCI-PM_L1.2+ PCI-PM_L1.1+ ASPM_L1.2+ ASPM_L1.1+ L1_PM_Substates+
+			  PortCommonModeRestoreTime=10us PortTPowerOnTime=10us
+		L1SubCtl1: PCI-PM_L1.2- PCI-PM_L1.1- ASPM_L1.2- ASPM_L1.1-
+			   T_CommonMode=0us LTR1.2_Threshold=0ns
+		L1SubCtl2: T_PwrOn=10us
+	Capabilities: [3a0 v1] Data Link Feature <?>
+	Kernel driver in use: nvme
+	Kernel modules: nvme
+
+
+---------- File system specs from 'df -h':
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p3 ext4      930G   25G  858G   3% /
+/dev/nvme0n1p1 vfat      821M   61M  761M   8% /boot/efi
+/dev/sda       ext4       11T  3.2T  7.1T  32% /home
+
+---------- Disk/Partition Information From 'fdisk':
+
+Disk /dev/sda: 10.94 TiB, 12000138625024 bytes, 23437770752 sectors
+Disk model: TOSHIBA MG07ACA1
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+Disk /dev/nvme0n1: 953.89 GiB, 1024209543168 bytes, 2000409264 sectors
+Disk model: PM9A1 NVMe Samsung 1024GB               
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: D03D4502-02EC-45B7-934C-17240FFD55A5
+
+Device            Start        End    Sectors   Size Type
+/dev/nvme0n1p1     2048    1691647    1689600   825M EFI System
+/dev/nvme0n1p2  1691648   18468863   16777216     8G Microsoft reserved
+/dev/nvme0n1p3 18468864 2000408575 1981939712 945.1G Linux filesystem
+
+
+---------- Disk/Partition Information From 'lsblk':
+NAME          SIZE FSTYPE   LABEL     MOUNTPOINT                   MODEL
+sda          10.9T ext4     data_12To /home                        TOSHIBA_MG07ACA12TEY
+nvme0n1     953.9G                                                 PM9A1 NVMe Samsung 1024GB
+|-nvme0n1p1   825M vfat     ESP       /boot/efi                    
+|-nvme0n1p2     8G vfat     OS                                     
+`-nvme0n1p3 945.1G ext4     UBUNTU    /                            
+   ------- 'lsblk' information continued ...
+NAME        HOTPLUG PARTUUID                             UUID
+sda               0                                      acff3ddb-2757-469f-b431-4b6e3e7b9ed3
+nvme0n1           0                                      
+|-nvme0n1p1       0 c572250a-710e-4c3a-adc5-4c0d7d2fc596 F2A1-1CE0
+|-nvme0n1p2       0 573f09da-e86f-4353-b7f7-71992abe7830 86BF-2437
+`-nvme0n1p3       0 4360e2dc-e0c3-4dba-8101-dcc503730e0a 83dbb8fc-faea-4e45-8b2c-978d1a19cd07
+
+---------- Mount Details of '/etc/fstab':
+UUID=83dbb8fc-faea-4e45-8b2c-978d1a19cd07 /               ext4    errors=remount-ro 0       1
+UUID=F2A1-1CE0  /boot/efi       vfat    umask=0077      0       1
+/swapfile                                 none            swap    sw              0       0
+/dev/sda	/home	ext4	defaults	0	0
+
+---------- Current Mount Details of 'mount':
+/dev/fuse on /run/user/1000/doc type fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+/dev/nvme0n1p1 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
+/dev/nvme0n1p3 on / type ext4 (rw,relatime,errors=remount-ro)
+/dev/sda on /home type ext4 (rw,relatime)
+
+---------- USB Information from 'lsusb -t -v':
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/10p, 5000M
+    ID 1d6b:0003 Linux Foundation 3.0 root hub
+    |__ Port 8: Dev 2, If 0, Class=Hub, Driver=hub/2p, 5000M
+        ID 0bda:0411 Realtek Semiconductor Corp. 
+    |__ Port 9: Dev 3, If 0, Class=Mass Storage, Driver=usb-storage, 5000M
+        ID 0bda:0328 Realtek Semiconductor Corp. 
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/16p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+    |__ Port 3: Dev 2, If 0, Class=Human Interface Device, Driver=usbhid, 1.5M
+        ID 413c:301a Dell Computer Corp. 
+    |__ Port 8: Dev 3, If 0, Class=Hub, Driver=hub/2p, 480M
+        ID 0bda:5411 Realtek Semiconductor Corp. 
+    |__ Port 13: Dev 4, If 1, Class=Human Interface Device, Driver=usbhid, 1.5M
+        ID 413c:2113 Dell Computer Corp. 
+    |__ Port 13: Dev 4, If 0, Class=Human Interface Device, Driver=usbhid, 1.5M
+        ID 413c:2113 Dell Computer Corp. 
+
+---------- Video Details from 'lshw':
+
+  *-display
+       description: VGA compatible controller
+       product: NVIDIA Corporation
+       vendor: NVIDIA Corporation
+       physical id: 0
+       bus info: pci@0000:73:00.0
+       version: a1
+       width: 64 bits
+       clock: 33MHz
+       capabilities: pm msi pciexpress vga_controller bus_master cap_list rom
+       configuration: driver=nvidia latency=0
+       resources: 
+           irq:172 
+           memory:c4000000-c4ffffff 
+           memory:b0000000-bfffffff 
+           memory:c0000000-c1ffffff 
+           ioport:9000(size=128) 
+           memory:c5000000-c507ffff
+
+   --- Graphics Environment Continued from 'various graphics ENVs' ----
+The Current Configured Destop is: ubuntu:GNOME 
+The Current Desktop Session is: ubuntu 
+The Current X Desktop Information Details from 'xrandr' are: 
+Screen 0: minimum 8 x 8, current 1920 x 1080, maximum 32767 x 32767
+DP-0 disconnected (normal left inverted right x axis y axis)
+DP-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 531mm x 299mm
+DP-2 disconnected (normal left inverted right x axis y axis)
+DP-3 disconnected (normal left inverted right x axis y axis)
+DP-4 disconnected (normal left inverted right x axis y axis)
+DP-5 disconnected (normal left inverted right x axis y axis)
+DP-6 disconnected (normal left inverted right x axis y axis)
+DP-7 disconnected (normal left inverted right x axis y axis)
+The Current Session Type is: x11 
+The Current Display Manager is: gdm3
+The Current Desktop Theme: 'Yaru'
+The Current Virtual TTY's being used are:
+	TTY#	Used By
+	tty1	gdm-x-session
+	tty1	Xorg
+	tty1	dbus-run-sessio
+	tty1	dbus-daemon
+	tty1	gnome-session-b
+	tty1	at-spi-bus-laun
+	tty1	dbus-daemon
+	tty1	gnome-shell
+	tty1	ibus-daemon
+	tty1	ibus-memconf
+	tty1	ibus-x11
+	tty1	ibus-portal
+	tty1	at-spi2-registr
+	tty1	xdg-permission-
+	tty1	gjs
+	tty1	gsd-sharing
+	tty1	gsd-wacom
+	tty1	gsd-color
+	tty1	gsd-keyboard
+	tty1	gsd-print-notif
+	tty1	gsd-rfkill
+	tty1	gsd-smartcard
+	tty1	gsd-datetime
+	tty1	gsd-media-keys
+	tty1	gsd-screensaver
+	tty1	gsd-sound
+	tty1	gsd-a11y-settin
+	tty1	gsd-housekeepin
+	tty1	gsd-power
+	tty1	ibus-engine-sim
+	tty1	gsd-printer
+	tty1	dconf-service
+	tty2	gdm-x-session
+	tty2	Xorg
+	tty2	gnome-session-b
+	pts/0	bash
+	pts/3	bash
+	pts/4	bash
+	pts/4	python
+	pts/1	bash
+	pts/1	less
+	pts/2	bash
+	pts/2	system-info
+	pts/5	vim
+	pts/2	system-info
+	pts/2	sed
+	pts/2	system-info
+	pts/2	ps
+	pts/2	awk
+
+---------- Repository Information from '/etc/apt/sources.list and etc/apt/sources.list.d/':
+
+Sources List:
+deb http://archive.ubuntu.com/ubuntu/ focal main restricted
+deb http://archive.ubuntu.com/ubuntu/ focal-updates main restricted
+deb http://archive.ubuntu.com/ubuntu/ focal universe
+deb http://archive.ubuntu.com/ubuntu/ focal-updates universe
+deb http://archive.ubuntu.com/ubuntu/ focal multiverse
+deb http://archive.ubuntu.com/ubuntu/ focal-updates multiverse
+deb http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse
+deb http://archive.canonical.com/ubuntu focal partner
+deb http://security.ubuntu.com/ubuntu focal-security main restricted
+deb http://security.ubuntu.com/ubuntu focal-security universe
+deb http://security.ubuntu.com/ubuntu focal-security multiverse
+
+Sources List from SourcesD:
+/etc/apt/sources.list.d/google-chrome.list:
+deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+/etc/apt/sources.list.d/vscode.list:
+deb [arch=amd64,arm64,armhf] http://packages.microsoft.com/repos/code stable main
+/etc/apt/sources.list.d/google-chrome.list.save:
+deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+/etc/apt/sources.list.d/ubuntu-desktop-ubuntu-ppa-focal.list:
+deb http://ppa.launchpad.net/ubuntu-desktop/ppa/ubuntu focal main
+/etc/apt/sources.list.d/vscode.list.save:
+deb [arch=amd64,arm64,armhf] http://packages.microsoft.com/repos/code stable main
+/etc/apt/sources.list.d/focal-oem.list:
+deb http://oem.archive.canonical.com/ focal oem
+/etc/apt/sources.list.d/focal-oem.list.save:
+deb http://oem.archive.canonical.com/ focal oem
+
+---------- Other Details from 'Various':
+The current kernel version is:       5.14.0-1045-oem 
+The current release description is:  Ubuntu 20.04.2 LTS (fossa-ditto X84) 
+Original Installation Date:          2022-03-22+14:58:39 
+Original Installation Media: Ubuntu 20.04 "Focal" - Build amd64 LIVE Binary 20200502-05:58
+Do-Release-Upgrade Date: This system may have not had a 'Release Upgrade' through 'do-release-upgrade'
+
+These are the current kernel ranges for HWE kernels for this release.
+   --- HWE Kernel Reference from 'apt-cache show':
+For HWE Package: linux-image-generic-hwe-20.04, Kernel Version: 5.15.0.43.46
+For HWE Package: linux-image-generic-hwe-20.04, Kernel Version: 5.4.0.26.32
+
+   --- HWE Package Status from 'dpkg':
+HWE package linux-generic-hwe-20.04 was not detected. Please check 
+kernel version to verify range
+
+   --- Certified Hardware Platform Status: (By the Ubuntu Wiki Standards)
+Hardware meta packages were listed. Please refrain from manually changing 
+the kernel flavours. The Hardware Enablement Stack (HWE) should not be 
+installed on this platform. 
+
+   --- User Installed Package List:
+aisleriot
+baobab
+branding-ubuntu
+cd-hit
+cm-super
+code
+csh
+curl
+deja-dup
+dvipng
+filezilla
+firefox-locale-fr
+git
+gnome-calendar
+gnome-getting-started-docs-fr
+gnome-mahjongg
+gnome-mines
+gnome-sudoku
+gnome-todo
+gnome-user-docs-fr
+hmmer
+hunspell-fr
+hw-probe
+hyphen-en-us
+hyphen-fr
+inxi
+krusader
+language-pack-fr
+language-pack-gnome-fr
+libcurl4-openssl-dev
+libreoffice-calc
+libreoffice-gnome
+libreoffice-help-en-us
+libreoffice-help-fr
+libreoffice-impress
+libreoffice-l10n-fr
+libreoffice-math
+libreoffice-pdfimport
+libreoffice-style-breeze
+libreoffice-writer
+libssl-dev
+libxml2-dev
+linux-headers-5.14.0-1032-oem
+linux-oem-20.04b
+mythes-en-us
+mythes-fr
+notepadqq
+nvidia-driver-460
+oem-fix-gfx-nvidia-ondemandmode
+oem-release
+openssh-server
+pymol
+python-is-python2
+python2
+python2.7
+python3-pip
+python3-venv
+r-base
+r-base-dev
+remmina
+rhythmbox
+rstudio
+shotwell
+simple-scan
+texlive-fonts-recommended
+texlive-latex-extra
+thunderbird
+thunderbird-gnome-support
+thunderbird-locale-en
+thunderbird-locale-en-us
+thunderbird-locale-fr
+totem
+transmission-gtk
+trash-cli
+unity-control-center
+vino
+wfrench
+
+Currently logged in User(s):
+NAME     LINE         TIME         COMMENT
+pauline  :1           Jul 30 16:44 (:1)
+
+The User running this script was: pauline
+uid=1000(pauline)
+gid=1000(pauline)
+groups=1000(pauline),27(sudo),1005(abi)
+
+The 'system-info' script was booted from an installed system.
+
+The 'system-info' script was run locally on the system
+
+The Linux Kernel Command Line use to boot was: 
+BOOT_IMAGE=/boot/vmlinuz-5.14.0-1045-oem root=UUID=83dbb8fc-faea-4e45-8b2c-978d1a19cd07 ro quiet splash vt.handoff=7
+
+---- Required Programs For Report.
+    --- Some Programs This Script Uses Were Missing --- 
+    pastebinit
+
+*** End Of Report ***
