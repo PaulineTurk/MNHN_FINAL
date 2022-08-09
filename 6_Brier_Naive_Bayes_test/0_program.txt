@@ -1,0 +1,10 @@
+cd ..
+cd 6_Brier_Naive_Bayes_test
+
+bash 1_main_test_brier_naive_bayes_uni.sh > 1.out 2>&1 &
+
+bash 2_main_test_brier_naive_bayes_multi.sh > 2.out 2>&1 &
+nohup python3 4_main_selection_pc_3d_view.py
+
+nohup python3 3_main_test_brier_naive_bayes_full.py > 3.out 2>&1 &
+nohup python3 4_main_selection_pc_3d_view_FULL.py

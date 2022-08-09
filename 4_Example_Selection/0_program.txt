@@ -1,0 +1,6 @@
+cd ..
+cd 4_Example_Selection
+
+nohup python3 1_main_ex_brier_selection.py TRAIN > 1_TRAIN.out 2>&1 &
+
+nohup python3 1_main_ex_brier_selection.py TEST > 1_TEST.out 2>&1 &

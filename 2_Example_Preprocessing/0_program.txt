@@ -1,0 +1,11 @@
+cd ..
+cd 2_Example_Preprocessing
+
+bash 1_main_seq_info.sh > 1_TRAIN.out 2>&1 &
+bash 1_main_seq_info.sh > 1_TEST.out 2>&1 &
+
+bash 2_main_ex_save.sh > 2_TRAIN.out 2>&1 &
+bash 2_main_ex_save.sh > 2_TEST.out 2>&1 &
+
+bash 3_main_ex_per_seed.sh > 3_TRAIN.out 2>&1 &
+bash 3_main_ex_per_seed.sh > 3_TEST.out 2>&1 &

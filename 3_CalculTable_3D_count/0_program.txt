@@ -1,0 +1,6 @@
+cd ..
+cd 3_CalculTable_3D_count
+
+bash 1_main_3d_count.sh > 1.out 2>&1 &
+
+nohup python3 visu_cube_in_csv.py

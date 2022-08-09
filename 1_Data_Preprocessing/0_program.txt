@@ -1,0 +1,10 @@
+cd ..
+cd 1_Data_Preprocessing
+
+nohup python3 1_main_general_folder.py > 1.out 2>&1 &
+
+bash 2_main_pid.sh > 2.out 2>&1 &
+
+nohup python3 3_main_clustering.py > 3.out 2>&1 &
+
+nohup python3 4_main_data_split.py > 4.out 2>&1 &

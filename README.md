@@ -10,8 +10,6 @@ The dataset used is the multiple sequence alignments called "seed" from the Pfam
 
 The proof of concept is realized by the calculation of probabilistic substitution matrices with or without a contextual amino acid.
 
-The user guide will be added when the project will be fully completed.
-
 
 
 

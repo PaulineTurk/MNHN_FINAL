@@ -1,0 +1,11 @@
+cd ..
+cd 5_Pseudo_counter_Selection_TEST
+
+nohup python3 1_main_selection_pc_2d.py > 1.out 2>&1 &
+nohup python3 1_main_selection_pc_2d_view.py
+
+bash 2_main_selection_pc_3d.sh > 2.out 2>&1 &
+nohup 4_main_selection_pc_3d_view_ORIGIN_DESTINATION.py
+
+bash 3_main_selection_pc_3d_multi.sh > 3.out 2>&1 &
+nohup 4_main_selection_pc_3d_view_ORIGIN_DESTINATION.py
