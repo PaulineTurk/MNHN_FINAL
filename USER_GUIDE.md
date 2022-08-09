@@ -1,6 +1,6 @@
 In order to use the method developped in this repository, you will need to:
 
-1. clone this repository
+1. clone this repository on your computer
 2. On the same path create the folder MNHN_RESULT
 3. In this folder, create the folder 1_DATA
 4. Download Pfam-A.seed.gz from http://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/ in MNHN_RESULT/1_DATA/
