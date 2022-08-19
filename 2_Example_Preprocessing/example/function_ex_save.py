@@ -84,3 +84,4 @@ def ex_save_full(seed, info_seq_dico, pid_file, L,
                                 writer.writerow(data)
 
                                 counter += 1
+                                

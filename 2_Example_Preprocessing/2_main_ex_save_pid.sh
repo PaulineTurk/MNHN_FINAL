@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# bash 2_main_ex_save.sh > 2_TRAIN.out 2>&1 &
-# bash 2_main_ex_save.sh > 2_TEST.out 2>&1 &
+
+# bash 2_main_ex_save_pid.sh > 2_TEST_PID.out 2>&1 &
 
 
 echo "TIME START"
@@ -25,11 +25,11 @@ for entry in "$listFASTA"/*;
     do  
         if [ $count -lt $batch_size ];
         then 
-            nohup python3 2_main_ex_save.py $entry $train_test &
+            nohup python3 2_main_ex_save_pid.py $entry $train_test &
             let count=count+1
             
         else
-            nohup python3 2_main_ex_save.py $entry $train_test &
+            nohup python3 2_main_ex_save_pid.py $entry $train_test &
             let count=count+1
             wait
             n_file=$(($n_file + $count))

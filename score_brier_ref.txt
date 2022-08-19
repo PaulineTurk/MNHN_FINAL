@@ -1,0 +1,59 @@
+# TEST SUR UN SOUS-ENSEMBLE DE 10 EXEMPLES (ON NE TIENT PLUS COMPTE DES AA CONTEXTUELS):
+
+aa_origine aa_destination
+V M
+P P
+F S
+S A
+L F
+G G
+D S
+I I
+R N
+
+Rq. j'ai repris les notations de l'équation du score de Brier de mon rapport P(j | i_{n}, C_{n})
+
+
+# Score de Brier obtenu pour chacun des exemples ci-dessus dans le cas ID 
+i.e le prédicteur utilisé pour le calcul du score de Brier,
+P(j | i_{n}, C_{n}) = 1 si j = i_{n},
+0 sinon:
+
+[2, 0, 2, 2, 2, 0, 2, 0, 2]
+
+## Moyenne de ces scores de Brier:
+mean Brier Score ID: 1.33333
+
+
+# Score de Brier obtenu pour chacun des exemples ci-dessus dans le cas stationnaire 
+i.e le prédicteur utilisé pour le calcul du score de Brier,
+P(j | i_{n}, C_{n}) = freq(j)
+avec freq(j) la fréquence de l'aa_prédit (cette fréquence a été calculée sur les 1.4Md d'exemples d'apprentissage):
+
+[1.0068216725353956, 0.9925374087467494, 0.9473040911517637, 0.8520126310493766, 
+0.9800004516400959, 0.9065712488439697, 0.9473040911517637, 0.9284736241290834, 0.9924579012626448]
+
+## Moyenne de ces scores de Brier:
+mean Brier Score stationary: 0.95039
+
+
+# Score de Brier obtenu pour chacun des exemples ci-dessus,
+dans le cas mix i.e le prédicteur utilisé pour le calcul du score de Brier,
+est le prédicteur ID si aa_origine == aa_destination, 
+sinon, c'est le prédicteur stationnaire:
+
+[1.0068216725353956, 0, 0.9473040911517637, 0.8520126310493766, 
+0.9800004516400959, 0, 0.9473040911517637, 0, 0.9924579012626448]
+
+## Moyenne de ces scores de Brier:
+mean Brier Score mix: 0.63621
+
+
+
+# Avec les 1M d'exemples test, j'obtiens les résultats suivants:
+
+mean Brier Score ID: 0.93913
+
+mean Brier Score stationary: 0.93448
+
+mean Brier Score mix: 0.43946

@@ -1,5 +1,5 @@
 """
-VIEW: BRIER TEST - FULL
+VIEW: BRIER TEST - SEMI_FULL
 """
 
 # IMPORTS
@@ -16,8 +16,11 @@ sys.path.append(file.parents[0])
 
 # PARAMETERS
 # EXPERIMENT_NAME = "EXP_1M_UNI"
-EXPERIMENT_NAME = "EXP_1M_FULL"
+EXPERIMENT_NAME = "EXP_1M_SEMI_FULL_D_subset"
 DATA = f"{file.parents[2]}/MNHN_RESULT/6_TEST_BRIER_NAIVE_BAYES/{EXPERIMENT_NAME}"
+
+REFERENCE = "D"
+
 
 L = 6
 
@@ -26,7 +29,7 @@ LIST_PSEUDO_COUNTER_3D = [pow(10, 0)]
 # PROGRAM
 
 # LOAD RESULT
-dict_3D = np.load(f"{DATA}/SCORE_FULL.npy", allow_pickle='True').item()
+dict_3D = np.load(f"{DATA}/SCORE_SEMI_FULL_{REFERENCE}_subset.npy", allow_pickle='True').item()
 
 
 # GET X, Y
@@ -46,12 +49,11 @@ for pseudo_counter_3D in LIST_PSEUDO_COUNTER_3D:
     plt.plot(list_position, list_score, label=pseudo_counter_3D)
 
 # plt.legend()
-plt.xlabel("POSITION RELATIVE", fontsize=17)
-plt.xticks(range(0, L + 1), fontsize=15)
-plt.yticks(fontsize=15)
-plt.ylabel('SCORE DE BRIER', fontsize=17)
-plt.grid(color='lightgrey', linestyle='--', linewidth=1)
-title_fig = f"Calcul du score de Brier bayésien naïf sur Pfam_TEST \nméthode FULL"
+plt.xlabel("POSITION RELATIVE", fontsize=13)
+plt.xticks(range(0, L + 1))
+plt.ylabel('SCORE DE BRIER', fontsize=13)
+plt.grid(color='lightgrey', linestyle='--', linewidth=0.5)
+title_fig = f"Calcul du score de Brier sur 1 million d'exemples test\navec la méthode SEMI_FULL, destination (subset)"
 plt.title(title_fig , loc='center', fontsize=20)
-title_fig = f"PC_3D_FULL_1M"
+title_fig = f"PC_3D_FULL_1M_{REFERENCE}_subset"
 plt.savefig(f"{DATA}/{title_fig}.png")
