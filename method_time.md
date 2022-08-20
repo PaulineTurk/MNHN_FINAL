@@ -1,4 +1,4 @@
-# Method ~ 10h20min
+# Method ~ 10h40min
 
 ## Preprocessing ~ 2h15min
 
@@ -85,7 +85,7 @@ and with pid between 40 and 50%
 
 
 
-## Testing Phase ~ 25min
+## Testing Phase ~ 45min
 
 ### Step 6: Brier with naive Bayes
 
@@ -94,3 +94,4 @@ and with pid between 40 and 50%
 1. Brier Score test computing with one contextual amino acid (UNI) ~ 5min
 2. Brier Score computing with multiple contextual amino acids (MULTI) ~ 7min
 3. Brier Score computing with all saved contextual amino acids (FULL) ~ 13min
+4. Brier Score computing with all saved contextual amino acids (SEMI-FULL) ~ 20min (for the origin AND the destination)
