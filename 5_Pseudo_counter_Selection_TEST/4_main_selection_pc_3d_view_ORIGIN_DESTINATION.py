@@ -6,6 +6,7 @@ VIEW: SELECTION PSEUDO_COUNTER 3D ORIGIN & DESTINATION TEST
 
 import sys
 from pathlib import Path
+from turtle import color
 import numpy as np
 import matplotlib.pyplot as plt
 import itertools
@@ -17,15 +18,15 @@ sys.path.append(file.parents[0])
 import brierNeighbour.brier as brier
 
 # PARAMETERS
-# EXPERIMENT_NAME = "EXP_1M_UNI"
-EXPERIMENT_NAME = "EXP_1M_MULTI"
+EXPERIMENT_NAME = "EXP_1M_UNI"
+# EXPERIMENT_NAME = "EXP_1M_MULTI"
 DATA = f"{file.parents[2]}/MNHN_RESULT/5_PC_3D_SELECTION_TEST/{EXPERIMENT_NAME}"
 
 L = 6
 
 
-# uni_multi = "uni"
-uni_multi = "multi"
+uni_multi = "uni"
+# uni_multi = "multi"
 
 
 # LIST_PSEUDO_COUNTER_3D = [0,
@@ -48,6 +49,9 @@ LIST_PSEUDO_COUNTER_3D = LIST_PSEUDO_COUNTER_3D + brier.pseudo_counter_generator
 
 LIST_PSEUDO_COUNTER_3D.sort()
 
+
+
+LIST_PSEUDO_COUNTER_3D = [1.0]   # added to look only at the 1 curve
 
 # PROGRAM
 import matplotlib as mpl
@@ -95,23 +99,24 @@ for origin_destination in ["origine", "destination"]:
                         list_score_origin.append(np.mean(dict_dict_3D[direction][position][pseudo_counter_3D]))
         if origin_destination == "origine":
             # line1, = plt.plot(list_position_origin, list_score_origin, label=pseudo_counter_3D)
-            plt.plot(list_position_origin, list_score_origin, label=pseudo_counter_3D)
+            plt.plot(list_position_origin, list_score_origin, label=pseudo_counter_3D, color="tab:purple")
         if origin_destination == "destination":
             # line2, = plt.plot(list_position_origin, list_score_origin, label=pseudo_counter_3D, linestyle='dashed')
-            plt.plot(list_position_origin, list_score_origin, linestyle='dashed')
+            plt.plot(list_position_origin, list_score_origin, linestyle='dashed', color="tab:purple")
 
 
 plt.legend(loc='lower right')
-plt.xlabel("RELATIVE POSITION", fontsize=13)
-plt.xticks(range(- L, L + 1))
-plt.ylabel('BRIER SCORE', fontsize=13)
+plt.xlabel("POSITION RELATIVE", fontsize=13)
+plt.xticks(range(- L, L + 1), fontsize=13)
+plt.yticks(fontsize=13)
+plt.ylabel('SCORE DE BRIER', fontsize=13)
 plt.grid(color='lightgrey', linestyle='--', linewidth=0.5)
 if uni_multi == "uni":
-    title_fig = f"Calcul du score de Brier bayésien naïf avec pseudo-compte 3D \n1M d'exemples TEST, méthode: UNI"
+    title_fig = f"Evaluation du paramètre de pseudo-compte 3D par calcul du\nScore de Brier moyen sur 1M d'exemples TEST, méthode: UNI"
 if uni_multi == "multi":
-    title_fig = f"Calcul du score de Brier bayésien naïf avec pseudo-compte 3D \n1M d'exemples TEST, méthode: MULTI"
+    title_fig = f"Evaluation du paramètre de pseudo-compte 3D par calcul du\nScore de Brier moyen sur 1M d'exemples TEST, méthode: MULTI"
 plt.title(title_fig , loc='center', fontsize=20)
-title_fig = f"PC_3D_{uni_multi}"
+title_fig = f"PC_3D_{uni_multi}_PPT_bigger"
 plt.savefig(f"{DATA}/{title_fig}.png")
 
 
