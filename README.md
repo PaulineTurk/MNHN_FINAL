@@ -1,7 +1,5 @@
 # Internship at the National Museum of Natural History (MNHN) on amino-acid mutation prediction
 
-Project still under development.
-
 Project developed during my Master 2 internship for the AgroParisTech and ParisSaclay engineering degree.
 
 The objective is to evaluate the prediction of the mutation of an amino acid knowing a more or less large window of neighboring amino acids in a protein sequence.
